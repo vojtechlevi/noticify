@@ -84,6 +84,7 @@ li {
     box-shadow: 5px 5px 5px #c9c9c9;
     position: relative;
     justify-content: space-between;
+
 }
 
 .tags {
@@ -128,6 +129,11 @@ li {
     background-color: var(--red);
 }
 
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05, 1.05);
+    transition: all 0.3s ease;
+}
 
 /* --------- /LEFT-CONTAINER --------- */
 
@@ -193,6 +199,10 @@ li {
     background-color: var(--green-solid);
 }
 
+.learn-more:hover {
+    transform: scale(1.05, 1.05);
+    transition: all 0.3s ease-in-out;
+}
 
 
 
