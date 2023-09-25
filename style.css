@@ -63,6 +63,7 @@ li {
 .main-container {
     display: flex;
     margin-top: 30px;
+    width: 100%;
 
 }
 
@@ -132,7 +133,7 @@ li {
 .card:hover {
     cursor: pointer;
     transform: scale(1.05, 1.05);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-out;
 }
 
 /* --------- /LEFT-CONTAINER --------- */
@@ -147,7 +148,6 @@ li {
 
 .right-container h1 {
     font-size: 5rem;
-
 }
 
 .right-container .text {
@@ -201,10 +201,116 @@ li {
 
 .learn-more:hover {
     transform: scale(1.05, 1.05);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 
 
 
 /* --------- /RIGHT-CONTAINER ---------*/
+
+@media (max-width: 375px) {
+
+    .header-container {
+        flex-direction: column;
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    ul li a {
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 375px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+
+}
+
+
+@media (max-width: 800px) {
+    .main-container {
+        margin-top: 150px;
+        flex-direction: column-reverse;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .right-container .text {
+        width: 100%;
+        margin: 20px 0 30px 0;
+    }
+
+    .right-container h1 {
+        font-size: 3rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 800px) {
+
+    .main-container {
+        margin-top: 150px;
+        flex-direction: column-reverse;
+    }
+
+    .right-container {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .right-container .text {
+        width: 100%;
+        margin: 20px 0 30px 0;
+    }
+
+    .right-container h1 {
+        font-size: 3rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .left-container {
+
+        width: 100%;
+        justify-content: center;
+    }
+
+    .card {
+        width: 45%;
+    }
+}
