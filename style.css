@@ -314,3 +314,21 @@ li {
         width: 45%;
     }
 }
+
+@media (min-width: 1100px) {
+
+    .main-container {
+        margin-top: 30px;
+        flex-direction: row;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .header-container {
+        padding: 0px 20px 0px 20px;
+    }
+
+}
